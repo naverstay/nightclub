@@ -1,0 +1,80 @@
+.selectbox {
+    background: #5c4a5c;
+}
+.check_box_emul {
+    display: none;
+}
+.check_box {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 9px;
+    display: block;
+}
+.radio_box {
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    z-index: 2;
+    display: block;
+}
+.radio_box.mod_famale {
+    left: 342px;
+}
+.mod_responsive .radio_box.mod_famale {
+    left: 300px;
+}
+.input_w_radio {
+    padding-left: 35px;
+}
+.fixed_menu_list,
+.venue_title,
+.venue_tabbar,
+.venue_block_footer,
+.venues_box_inner,
+.wrapper {
+    background: none;
+}
+.venue_title.drop_icon:before {
+    display: none;
+}
+.fixed_title .drop_icon.opened:before,
+.fixed_title .drop_icon .wrapper_ie_bg {
+    display: none;
+}
+.fixed_title .drop_icon.opened .wrapper_ie_bg {
+    display: block;
+}
+.ie_bg_holder,
+.wrapper_ie_bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: block;
+}
+.event_block {
+    position: relative;
+    background: none;
+}
+@media only screen
+and  (max-width:480px) {
+    .base,
+    .overlay {
+        zoom: 1 !important;
+    }
+}
+@media screen and (min-width:1024px) {
+    .mod_responsive .radio_box {
+        position: absolute;
+        top: 17px;
+        left: 5px;
+        z-index: 2;
+        display: block;
+    }
+    .mod_responsive .radio_box.mod_famale {
+        left: 152px;
+    }
+}
